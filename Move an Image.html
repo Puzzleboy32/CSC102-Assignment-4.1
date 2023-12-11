@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC102 12 6 23 Move an Image</title>
+    <script src = "Move an Image.js"></script>
+</head>
+<body>
+    <img src="basketball.png" class="ball" id='ball' style="position:absolute; left: 400; top: 100;">
+    <br><br><br><br>
+    <!---These are the button one is to start moving and the other is to reset.-->
+    <input type=button onClick=start() value='Start' class="button">
+    <input type=button onClick=reset1() value='Reset' class="button">
+    <div id='msg'></div>
+    <style>
+        /* Ball is where to move it and how big of the image*/
+        .ball{
+            height: 50px;
+            width: 50px;
+            transform: translateX(400);
+        }
+        /* For image color i wanted green its just my favorite color */
+        body{
+            background-color: green;
+        }
+        /* the button i wanted it bigger and change the font of it */
+        .button{
+            font-size: larger;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</body>
+</html>
